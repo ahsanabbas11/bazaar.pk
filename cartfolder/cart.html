@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Bazar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../home.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand font-weight-bold" href="#">
+                <i class="fas fa-shopping-bag mr-2"></i>Bazar
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="category.html">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cartfolder/cart.html">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="container">
+            <h1 class="cart-title">Shopping Cart</h1>
+            
+            <div class="row">
+                <!-- Cart Items -->
+                <div class="col-lg-8 mb-4">
+                    <div class="cart-items">
+                        <!-- Cart Item Template -->
+                        <div class="cart-item">
+                            <img src="./cartimg/computer.png" alt="Product" class="cart-item-image">
+                            <div class="cart-item-details">
+                                <h3>Gaming Laptop</h3>
+                                <p class="price">$999.99</p>
+                                <div class="quantity-controls">
+                                    <button class="btn btn-sm btn-outline-primary">-</button>
+                                    <input type="number" value="1" min="1" class="quantity-input">
+                                    <button class="btn btn-sm btn-outline-primary">+</button>
+                                </div>
+                            </div>
+                            <button class="remove-item btn btn-link text-danger">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+
+                        <!-- Cart Item 2 -->
+                        <div class="cart-item">
+                            <img src="./cartimg/clothes.png" alt="Product" class="cart-item-image">
+                            <div class="cart-item-details">
+                                <h3>Summer Collection</h3>
+                                <p class="price">$49.99</p>
+                                <div class="quantity-controls">
+                                    <button class="btn btn-sm btn-outline-primary">-</button>
+                                    <input type="number" value="1" min="1" class="quantity-input">
+                                    <button class="btn btn-sm btn-outline-primary">+</button>
+                                </div>
+                            </div>
+                            <button class="remove-item btn btn-link text-danger">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Empty Cart Message -->
+                    <div class="text-center py-5 d-none">
+                        <h3>Your cart is empty</h3>
+                        <a href="../home.html" class="btn btn-primary mt-3">Continue Shopping</a>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="col-lg-4">
+                    <div class="order-summary">
+                        <h2>Order Summary</h2>
+                        <!-- Coupon Code Section -->
+                        <div class="coupon-section mb-3">
+                            <input type="text" class="form-control mb-2" placeholder="Enter coupon code">
+                            <button class="btn btn-outline-primary btn-block">Apply Coupon</button>
+                        </div>
+                        <div class="summary-item">
+                            <span>Subtotal</span>
+                            <span>$1049.98</span>
+                        </div>
+                        <div class="summary-item" style="display: none;">
+                            <span>Discount</span>
+                            <span>-$0.00</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Shipping</span>
+                            <span>$10.00</span>
+                        </div>
+                        <div class="summary-item total">
+                            <span>Total</span>
+                            <span>$1059.98</span>
+                        </div>
+                        <button class="btn btn-primary btn-block">Proceed to Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <!-- ...existing footer code... -->
+    </footer>
+</body>
+
+</html>

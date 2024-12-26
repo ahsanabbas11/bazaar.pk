@@ -1,0 +1,96 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header Styling */
+header {
+    background-color: #1e3a8a;  /* Blue background for the header */
+    color: white;
+    padding: 50px 20px;  /* Add padding for spacing around the text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Center text vertically */
+    align-items: center;  /* Center text horizontally */
+    text-align: center;  /* Ensure text is centered */
+    height: 10px;  /* Add height to make the header more prominent */
+}
+
+/* Header Title */
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Tagline Styling */
+header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #f1f1f1;
+}
+
+/* Container for the Cards */
+.container {
+    display: flex;
+    flex-wrap: wrap;  /* Allow the cards to wrap on smaller screens */
+    gap: 20px;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Card Styling */
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 250px;  /* Increase width */
+    height: 350px;  /* Adjust height */
+    flex-shrink: 0;
+}
+
+/* Card Image Styling */
+.card img {
+    max-width: 100%;  /* Ensure the image scales within the card */
+    height: auto;  /* Maintain aspect ratio */
+    max-height: 150px;  /* Limit the height of the image */
+    margin-bottom: 15px;
+}
+
+/* Card Title Styling */
+.card-title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Price Styling */
+.price {
+    font-size: 16px;
+    color: #1e3a8a;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    background-color: #1e3a8a;
+}

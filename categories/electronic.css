@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e3a8a;
+    color: white;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .header .tagline {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+    color: #f1f1f1;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* Allow the cards to wrap on smaller screens */
+    gap: 20px;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  .card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 250px; /* Increase width */
+    height: 350px; /* Adjust height */
+    flex-shrink: 0;
+  }
+  
+  .card img {
+    max-width: 100%; /* Make the image scale within the card */
+    height: auto; /* Maintain the image aspect ratio */
+    max-height: 150px; /* Limit the height of the image to ensure it fits */
+    margin-bottom: 15px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 16px;
+    color:  #1e3a8a;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .btn {
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #1e3a8a;
+  }
+  
